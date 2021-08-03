@@ -1,0 +1,15 @@
+@import 'config';
+@import 'navbar';
+@import 'main';
+@import 'footer';
+@import 'responzive';
+
+
+body{
+    background: $background-color;
+    color:$primary-text-color;
+    position: relative;
+}
+
+
+
