@@ -34,3 +34,8 @@ $navbar-background-color: rgb(85, 57, 57);
         @content;
     }
 }
+@mixin media-xl{
+    @media screen and (max-width:1600px){
+        @content;
+    }
+}
