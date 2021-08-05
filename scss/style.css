@@ -511,6 +511,21 @@
     margin: 1.5rem 0;
     width: 35vw;
   }
+  /**Footer section*/
+  .footer__menu a, .footer-contact__container a, .footer-social_media a {
+    font-size: 0.8rem;
+  }
+  .footer__menu a i, .footer-contact__container a i, .footer-social_media a i {
+    font-size: 1.1rem;
+    margin-right: 0.3rem;
+  }
+  .footer-contact__container {
+    width: 29%;
+  }
+  .footer-arrow__container button {
+    height: 28px;
+    width: 28px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -622,6 +637,37 @@
   .projects__menu-list {
     margin: 2.5rem 0;
     width: 50vw;
+  }
+  /**Footer section*/
+  .footer {
+    padding: 0;
+  }
+  .footer__container {
+    padding: 0;
+  }
+  .footer-icons__container {
+    padding: 1rem 0;
+  }
+  .footer-contact__container i, .footer-social_media i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0.2rem;
+  }
+  .footer-contact__container {
+    width: 35%;
+  }
+  .footer-arrow__container {
+    right: 1rem;
+  }
+  .footer-arrow__container button {
+    height: 23px;
+    width: 23px;
   }
 }
 
