@@ -18,7 +18,7 @@
 
 .navbar {
   width: 100vw;
-  height: 15vh;
+  height: 20vh;
   padding: 1rem 0;
   margin: 0 auto;
   z-index: 999;
@@ -319,7 +319,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1rem;
-  background: rgba(92, 44, 44, 0.8);
+  background: rgba(53, 25, 25, 0.8);
 }
 
 .footer__container {
