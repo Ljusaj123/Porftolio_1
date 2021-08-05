@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 0 1rem;
-	background: $footer-navbar-background;
+	background: $footer-background;
 
 	&__container {
 		width: 100%;
@@ -37,6 +37,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
+		border-right: 1px solid $primary-text-color;
 
 		& a {
 			color: $primary-text-color;
