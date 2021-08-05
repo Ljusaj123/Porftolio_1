@@ -8,6 +8,7 @@
 	z-index: 999;
     position: sticky;
     top: 0;
+	background: $background-color;
 	@include border-bottom;
 
 	&__container {
