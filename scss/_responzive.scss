@@ -96,7 +96,7 @@
 			align-items: center;
 			opacity: 0;
 			z-index: -1;
-			background-color: $navbar-background-color;
+			background-color: $background-color;
 			@include transition-ease;
 
 			&.active {
