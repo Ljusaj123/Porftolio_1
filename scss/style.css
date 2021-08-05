@@ -691,7 +691,7 @@
   }
   .main_page__container {
     width: 100%;
-    height: 90%;
+    height: 100%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -721,6 +721,25 @@
   .main_page p {
     font-size: 0.85rem;
   }
+  /**experience section*/
+  .experience__container h1 {
+    font-size: 2rem;
+  }
+  .experience_tables {
+    width: 100%;
+  }
+  .experience_table {
+    width: 90%;
+  }
+  .experience_table h2 {
+    font-size: 1.3rem;
+  }
+  .experience_table h3 {
+    font-size: 1.1rem;
+  }
+  .experience_table p {
+    font-size: 0.8rem;
+  }
   /*Project section*/
   .projects__container h1 {
     font-size: 1.7rem;
@@ -731,7 +750,7 @@
   }
   .projects__menu-list {
     margin: 2.5rem 0;
-    width: 60vw;
+    width: 65vw;
   }
   /**Footer section*/
   .footer {
