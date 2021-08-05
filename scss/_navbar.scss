@@ -1,3 +1,5 @@
+@import 'config';
+
 .navbar {
 	width: 100vw;
 	height: 15vh;
@@ -42,10 +44,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		
 
 		&-list {
 			line-height: 2.5rem;
 			list-style: none;
+			
 		}
 		&-link {
 			text-decoration: none;
@@ -53,11 +57,13 @@
 			font-size: 1.2rem;
 			text-transform: uppercase;
 			@include transition-ease;
+			
 
 			&:hover {
 				color: $hover-text-color;
 				@include transition-ease;
 			}
+			
 		}
 	}
 
@@ -66,4 +72,6 @@
 	}
 }
 
-
+.highlight{
+	@include border-bottom;
+}

@@ -7,6 +7,15 @@
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
 .navbar {
   width: 100vw;
   height: 15vh;
@@ -88,6 +97,10 @@
 
 .navbar__hamburger {
   display: none;
+}
+
+.highlight {
+  border-bottom: solid white 1px;
 }
 
 .main_page {
