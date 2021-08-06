@@ -1,10 +1,11 @@
 const menu = document.querySelector('.navbar__hamburger');
+const hamburger = document.querySelectorAll('.navbar__hamburger-line');
 const navbar = document.querySelector('.navbar__menu');
 
 
 menu.addEventListener('click', () => {
     navbar.classList.toggle('active');
-    menu.classList.toggle('is-active');
+    hamburger.forEach(ham => ham.classList.toggle('open'));
 });
 
 const elem = document.querySelector('.highlight');

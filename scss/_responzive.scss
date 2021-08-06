@@ -77,41 +77,36 @@
 			grid-gap: 1.5rem;
 
 			&-list {
-				
 				margin: 1.5rem 0;
 				width: 40vw;
-				
 			}
 		}
 	}
 
 	/**Footer section*/
 
-	.footer{
-		
-		&__menu, &-contact__container, &-social_media{
-			
-			& a{
+	.footer {
+		&__menu,
+		&-contact__container,
+		&-social_media {
+			& a {
 				font-size: 0.8rem;
-				
-				& i{
+
+				& i {
 					font-size: 1.1rem;
 					margin-right: 0.3rem;
 				}
 			}
-
 		}
 
-		&-contact__container{
+		&-contact__container {
 			width: 29%;
 		}
 
-		&-arrow__container button{
+		&-arrow__container button {
 			height: 28px;
 			width: 28px;
-			
 		}
-		
 	}
 }
 
@@ -148,23 +143,24 @@
 			display: block;
 			cursor: pointer;
 			z-index: 998;
-
-			& .line {
+			&-line {
 				width: 27px;
 				height: 3px;
 				margin: 5px 2px;
 				background-color: $primary-text-color;
 				list-style: none;
 				@include transition-ease;
-			}
-			&.is-active .line:nth-child(2) {
-				opacity: 0;
-			}
-			&.is-active .line:nth-child(1) {
-				transform: translateY(13px) rotate(45deg);
-			}
-			&.is-active .line:nth-child(3) {
-				transform: translateY(-3px) rotate(-45deg);
+
+				&.open:nth-child(2) {
+					transform: rotate(720deg);
+					background: transparent;
+				}
+				&.open:nth-child(1) {
+					transform: translateY(13px) rotate(45deg);
+				}
+				&.open:nth-child(3) {
+					transform: translateY(-3px) rotate(-45deg);
+				}
 			}
 		}
 	}
@@ -206,36 +202,32 @@
 	}
 
 	/**experience section*/
-	.experience{
-
-		&__container{
-	
-			& h1{
+	.experience {
+		&__container {
+			& h1 {
 				font-size: 2rem;
 			}
 		}
-		&_tables{
+		&_tables {
 			width: 100%;
 		}
-	
-		&_table{
+
+		&_table {
 			width: 90%;
 
-			& h2{
+			& h2 {
 				font-size: 1.3rem;
 			}
 
-			& h3{
+			& h3 {
 				font-size: 1.1rem;
 			}
 
-			& p{
+			& p {
 				font-size: 0.8rem;
 			}
 		}
 	}
-
-
 
 	/*Project section*/
 	.projects {
@@ -257,40 +249,37 @@
 
 	/**Footer section*/
 
-	.footer{
+	.footer {
 		padding: 0;
 
-		&__container{
+		&__container {
 			padding: 0;
 		}
 
-		&-icons__container{
+		&-icons__container {
 			padding: 1rem 0;
 		}
-		&-contact__container, &-social_media{
-				& i{
-					display: flex;
-					align-self: flex-start;
-					justify-content: center;
-					margin-bottom: 0.2rem;
-				}
+		&-contact__container,
+		&-social_media {
+			& i {
+				display: flex;
+				align-self: flex-start;
+				justify-content: center;
+				margin-bottom: 0.2rem;
+			}
 		}
 
-		&-contact__container{
+		&-contact__container {
 			width: 35%;
 		}
 
 		&-arrow__container {
 			right: 1rem;
 
-			& button{
+			& button {
 				height: 23px;
-			width: 23px;
+				width: 23px;
 			}
-			
 		}
-		
 	}
-
-
 }
