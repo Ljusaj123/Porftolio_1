@@ -8,8 +8,7 @@
 	z-index: 999;
     position: sticky;
     top: 0;
-	background: $background-color;
-	@include border-bottom;
+	background: rgba(24, 18, 18, 0.7);
 
 	&__container {
 		height: 100%;
