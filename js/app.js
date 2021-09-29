@@ -8,13 +8,15 @@ menu.addEventListener('click', () => {
     hamburger.forEach(ham => ham.classList.toggle('open'));
 });
 
-const elem = document.querySelector('.highlight');
-const homeMenu = document.querySelector('#home-page');
-const expMenu = document.querySelector('#exp-page');
-const projectsMenu = document.querySelector('#projects-page');
-const contactMenu = document.querySelector('#contact-page');
+
 
 const highlightMenu = () => {
+    const elem = document.querySelector('.highlight');
+    const homeMenu = document.querySelector('#home-page');
+    const expMenu = document.querySelector('#exp-page');
+    const projectsMenu = document.querySelector('#projects-page');
+    const contactMenu = document.querySelector('#contact-page');
+
     if (window.innerWidth > 650 && window.scrollY < 700) {
         homeMenu.classList.add('highlight');
         expMenu.classList.remove('highlight');
@@ -41,7 +43,7 @@ const highlightMenu = () => {
         projectsMenu.classList.remove('highlight');
         contactMenu.classList.add('highlight');
     }
-    if ((elem && windoew.innerWidth > 960 && window.scrollY < 650) || elem) {
+    if ((elem && window.innerWidth < 650)) {
         elem.classList.remove('highlight');
     }
 };
